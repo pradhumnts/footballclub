@@ -10,14 +10,16 @@
 <body>
     <br><br>
     <div class="container">
+    {% for x in res %}
     <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="https://cdn.britannica.com/51/190751-050-147B93F7/soccer-ball-goal.jpg" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">{{ res.heading }}</h5>
-          <p class="card-text">{{ res.article }}</p>
+          <h5 class="card-title">{{ x }}</h5>
+          <p class="card-text">{{ x }}</p>
           <a href="#" class="btn btn-primary">Go somewhere</a>
         </div>
       </div>
+    {% endfor %}
     </div>
 </body>
 </html>
